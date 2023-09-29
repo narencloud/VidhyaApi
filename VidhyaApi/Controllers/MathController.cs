@@ -17,9 +17,10 @@ namespace VidhyaApi.Controllers
 
         // GET api/<MathController>/5
         [HttpGet("{id}")]
-        public int Get(int id)
+        public string Get(int id)
         {
-            return id * id;
+            int result =  id * id;
+            return result.ToString();
         }
 
         // POST api/<MathController>
